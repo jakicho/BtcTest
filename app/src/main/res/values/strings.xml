@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">LedgerTest</string>
+
+    <!-- Popup Alert -->
+    <string name="invalid_address">not a valid Bitcoin Address</string>
+
+    <!-- Layout -->
+    <string name="hint_enter_a_bitcoin_address">Enter a bitcoin address</string>
+    <string name="btn_check_address">Check address</string>
+    <string name="btn_check_default_address">Check Default address*</string>
+    <string name="tv_or">or</string>
+    <string name="tv_balance">Balance :</string>
+    <string name="tv_received">"received "</string>
+    <string name="tv_sent">"sent "</string>
+
+    <!-- LEDGER API -->
+    <string name="api_endpoint">https://api.ledgerwallet.com/blockchain/v2/btc/</string>
+    <string name="default_address">1JBDpnQvj34BnMAHviYm7HYwhba7eFJckN</string>
+
+
+
+</resources>

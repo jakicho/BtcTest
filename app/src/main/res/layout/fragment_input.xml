@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tran.ledgertest.mainActivity.InputFragment">
+
+    <EditText
+        android:id="@+id/et_address"
+        android:hint="@string/hint_enter_a_bitcoin_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_input_address"
+        android:text="@string/btn_check_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:gravity="center"
+        android:text="@string/tv_or"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <Button
+        android:id="@+id/btn_default_address"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/btn_check_default_address"/>
+
+    <TextView
+        android:text="@string/default_address"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+</LinearLayout>
