@@ -9,7 +9,7 @@ import retrofit2.http.Path;
 public interface LedgerService {
 
     @GET("addresses/{address}/transactions?noToken=true")
-    Call<JsonResult> getListTransactions(
+    Call<JsonResult> getTransactionsList(
             @Path("address") String address);
 
 }

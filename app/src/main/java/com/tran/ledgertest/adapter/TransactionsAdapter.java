@@ -21,21 +21,18 @@ public class TransactionsAdapter extends RecyclerView.Adapter<TransactionsAdapte
     private LayoutInflater inflater;
     private String userAddress;
     private List<Transaction> mDataset = Collections.emptyList();
-    private Context context;
 
     public TransactionsAdapter(Context context, List<Transaction> mDataset, String userAddress){
 
         inflater = LayoutInflater.from(context);
         this.userAddress = userAddress;
         this.mDataset = mDataset;
-        this.context = context;
     }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
 
         View view = inflater.inflate(R.layout.item_recycler, viewGroup, false);
-
         return new ViewHolder(view);
     }
 
@@ -59,7 +56,6 @@ public class TransactionsAdapter extends RecyclerView.Adapter<TransactionsAdapte
                 return;
             }
         }
-
     }
 
     @Override

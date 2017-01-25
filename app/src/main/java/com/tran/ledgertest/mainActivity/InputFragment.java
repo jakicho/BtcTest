@@ -4,7 +4,6 @@ package com.tran.ledgertest.mainActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,9 +20,9 @@ import butterknife.ButterKnife;
 
 public class InputFragment extends Fragment {
 
-    @Bind(R.id.et_address) public EditText et_address;
-    @Bind(R.id.btn_input_address) public Button btn_input_address;
-    @Bind(R.id.btn_default_address) public Button btn_default_address;
+    @Bind(R.id.et_address) public EditText etAddress;
+    @Bind(R.id.btn_input_address) public Button btnInputAddress;
+    @Bind(R.id.btn_default_address) public Button btnDefaultAddress;
 
     public InputFragment() {
     }
@@ -40,7 +39,7 @@ public class InputFragment extends Fragment {
 
     private void setBtnClicks() {
 
-        btn_default_address.setOnClickListener(new View.OnClickListener() {
+        btnDefaultAddress.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent checkIntent = new Intent(getContext(), TransactionsActivity.class);
@@ -49,10 +48,10 @@ public class InputFragment extends Fragment {
             }
         });
 
-        btn_input_address.setOnClickListener(new View.OnClickListener() {
+        btnInputAddress.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String inputAddress = String.valueOf(et_address.getText());
+                String inputAddress = String.valueOf(etAddress.getText());
 
                 if(addressIsValid(inputAddress)) {
 
