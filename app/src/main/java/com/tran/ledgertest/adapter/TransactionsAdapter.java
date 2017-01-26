@@ -43,7 +43,7 @@ public class TransactionsAdapter extends RecyclerView.Adapter<TransactionsAdapte
 
         for (Input input : current.getInputs()) {
             if((input.getAddress()).equals(userAddress)) {
-                holder.tvValue.setText("+"+ input.getValue()/1000 + "mBTC");
+                holder.tvValue.setText("+"+ input.getValue()/100 + " bits");
                 holder.tvDirection.setText(R.string.tv_received);
                 return;
             }
@@ -51,7 +51,7 @@ public class TransactionsAdapter extends RecyclerView.Adapter<TransactionsAdapte
 
         for(Output output: current.getOutputs()) {
             if( (output.getAddress()).equals(userAddress)) {
-                holder.tvValue.setText("-"+ output.getValue()/1000 + "mBTC");
+                holder.tvValue.setText("-"+ output.getValue()/100 + " bits");
                 holder.tvDirection.setText(R.string.tv_sent);
                 return;
             }
